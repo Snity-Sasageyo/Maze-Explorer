@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+    font-family: 'Courier New', monospace;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game {
+    display: block;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#minimap {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 2px solid #0f0;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+#hud {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #0f0;
+    text-align: right;
+    font-size: 13px;
+    text-shadow: 2px 2px 4px #000;
+    line-height: 1.6;
+}
+
+#fps, #pos {
+    margin-bottom: 5px;
+}
