@@ -8,12 +8,14 @@ body {
     overflow: hidden;
     background: #000;
     font-family: 'Courier New', monospace;
+    user-select: none;
 }
 
 #game-container {
     position: relative;
     width: 100vw;
     height: 100vh;
+    cursor: none;
 }
 
 #game {
@@ -21,14 +23,13 @@ body {
     width: 100%;
     height: 100%;
     image-rendering: pixelated;
-    image-rendering: crisp-edges;
 }
 
 #minimap {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.8);
     border: 2px solid #0f0;
     width: 180px;
     height: 180px;
@@ -41,11 +42,11 @@ body {
     right: 15px;
     color: #0f0;
     text-align: right;
-    font-size: 13px;
+    font-size: 14px;
     text-shadow: 2px 2px 4px #000;
     line-height: 1.6;
 }
 
-#fps, #pos {
+#hud div {
     margin-bottom: 5px;
 }
