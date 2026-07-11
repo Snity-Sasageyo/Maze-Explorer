@@ -14,6 +14,26 @@
             <div id="fps">FPS: 0</div>
             <div id="pos">X: 0 Y: 0</div>
             <div id="depth">Depth: 0</div>
+            <div id="score">Score: 0</div>
+        </div>
+        
+        <div id="menu-screen" class="overlay">
+            <h1>MAZE EXPLORER</h1>
+            <p>WASD to Move, Q/E to Turn</p>
+            <p>Collect artifacts. Avoid hazards.</p>
+            <p class="blink">PRESS ENTER TO START</p>
+            <p id="high-score">HIGH SCORE: 0</p>
+        </div>
+        
+        <div id="pause-screen" class="overlay" style="display:none;">
+            <h1>PAUSED</h1>
+            <p class="blink">PRESS ESC TO RESUME</p>
+        </div>
+        
+        <div id="gameover-screen" class="overlay" style="display:none;">
+            <h1>RUN ENDED</h1>
+            <p id="final-score">SCORE: 0</p>
+            <p class="blink">PRESS ENTER TO RESTART</p>
         </div>
     </div>
     <script src="game.js"></script>
